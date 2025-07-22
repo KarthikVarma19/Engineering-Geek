@@ -1,0 +1,219 @@
+.reviewContainer {
+  margin: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.reviewContainerHeaderContainer {
+  font-size: 12px;
+}
+
+.reviewCardFooterContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 10px;
+}
+
+.reviewCardRatingStarPositive {
+  background-color: green;
+  color: white;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.reviewCardRatingStarNegative {
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.reviewCardReviewHeading {
+  font-weight: bold;
+  margin-left: 10px;
+  font-family: "Poppins";
+}
+
+.reviewCardReviewContentContainer {
+  padding: 10px 0px;
+}
+
+.reviewCardReviewContentContent {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+.viewMoreButton {
+  color: blue;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.reviewCardReviewPicContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.reviewCardReviewPicImage {
+  height: 60px;
+  background-color: aqua;
+  width: 60px;
+  margin-right: 10px;
+  border: solid 1px;
+}
+
+.reviewCardFooterContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+
+.reviewCardFooterReviewerName {
+  background-color: blanchedalmond;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.reviewCardFooterReviewerName:hover {
+  background-color: gray;
+  color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.reviewCardFooterLikesContainer {
+  display: flex;
+  flex-direction: row;
+  margin-left: 13px;
+}
+
+.reviewCardFooterLikesContainerCliked {
+  cursor: pointer;
+  color: blue;
+  font-weight: bold;
+}
+
+.reviewCardFooterLikesContainer:hover {
+  cursor: pointer;
+  color: blue;
+  font-weight: bold;
+}
+.reviewCardFooterDisLikesContainer {
+  display: flex;
+  flex-direction: row;
+  margin-left: 13px;
+}
+.reviewCardFooterDisLikesContainer:hover {
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+}
+
+.reviewCardFooterDisLikesContainerDisLiked {
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+}
+
+.reviewCardFooterLikesNumber {
+  margin: 0 4px;
+}
+
+.reviewCardFooterContainerLeftRight {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.reviewCardFooterContainerLeftContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.reviewCardFooterContainerRightContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.reviewCardFooterReviewerVerifiedSuccessName {
+  color: green;
+  padding-top: 5px;
+  margin-left: 8px;
+}
+
+.reviewCardFooterReviewerUnVerifiedSuccessName {
+  color: red;
+  padding-top: 5px;
+  margin-left: 8px;
+}
+.reviewCardFooterReviewerLocation {
+  color: blue;
+  padding-top: 5px;
+  margin-left: 5px;
+}
+
+.reviewCardFooterReviewerDate {
+  margin-left: 8px;
+  padding-top: 5px;
+}
+
+.reviewCardFooterMoreContainer {
+  margin-left: 13px;
+  cursor: pointer;
+}
+
+/* If the Screen Size Goes Above 1024px */
+@media (min-width: 1024px) {
+  .reviewCardFooterContainer {
+    font-size: 13px;
+  }
+}
+
+/* If the Screen Size Goes Below 1024px */
+@media (max-width: 1024px) {
+  .reviewCardFooterContainerRightContainer {
+    margin-top: 10px;
+  }
+}
+
+.reviewCardFooterMoreContainerOnClikedContainer {
+  display: flex; /* Initially hidden */
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Adjusted for side-by-side layout */
+  background-color: #f9f9f9;
+  border: 1px solid #000000;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+.reviewCardFooterMoreContainerOnClikedContainer.active {
+  display: flex; /* Display when active */
+}
+
+.reviewCardFooterMoreContainerOnClikedContainerReportAbuse {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.reviewCardFooterMoreContainerOnClikedContainerReportAbuse {
+  display: flex;
+  flex-direction: row;
+  margin-left: 13px;
+}
+
+.reviewCardFooterMoreContainerOnClikedContainerReportAbuse:hover {
+  color: #eed202;
+}
+
+.reviewCardFooterMoreContainerOnClikedContainerReportAbuseName {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  padding: 0px 0px 5px 5px;
+}
